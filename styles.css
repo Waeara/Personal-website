@@ -56,7 +56,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .form-group {
@@ -117,7 +118,7 @@ a:hover {
     width: 100%;
 }
 
-h1, label {
+h1, h2, label {
     text-align: center;
 }
 
@@ -134,7 +135,8 @@ h1, label {
 .publication {
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 500px; 
     color: white; 
     padding: 10px; 
@@ -205,8 +207,8 @@ h1, label {
 /* Responsive Styles */
 @media (max-width: 550px) {
     nav a {
-        display: block;
-        margin: 10px 0;
+        display: inline-block;
+        margin: 5px;
     }
 
     body {
@@ -244,11 +246,8 @@ h1, label {
     }
 }
 
-@media (max-width: 550px) {
-    nav a {
-        /* You can keep this as block or change to inline-block as per requirement */
-        display: inline-block;
-        margin: 5px; /* Adjust margin as needed */
+@media (max-width: 600px) {
+    .publication {
+        width: 90%; 
     }
-    /* ... other styles ... */
 }
