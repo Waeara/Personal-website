@@ -139,6 +139,10 @@ body, p {
         max-width: 100%;
         overflow-x: hidden; /* This ensures that no horizontal scroll bar appears */
     }
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box; /* This ensures padding doesn't expand the element's total width */
+    }
 }
 
 #contact {
