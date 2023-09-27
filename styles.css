@@ -30,6 +30,9 @@ nav {
     background-color: #333;
     overflow: hidden;
     padding: 10px 0;
+    display: flex;           
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 nav a {
@@ -39,6 +42,7 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    padding: 14px 8px;
 }
 
 nav a:hover,
@@ -238,4 +242,13 @@ h1, label {
         width: 100%;
         box-sizing: border-box;
     }
+}
+
+@media (max-width: 550px) {
+    nav a {
+        /* You can keep this as block or change to inline-block as per requirement */
+        display: inline-block;
+        margin: 5px; /* Adjust margin as needed */
+    }
+    /* ... other styles ... */
 }
