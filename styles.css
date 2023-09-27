@@ -28,7 +28,7 @@ a:hover {
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
     nav a {
         display: block;
         margin: 10px 0;
@@ -60,6 +60,8 @@ body, p {
     padding: 20px;
     text-align: center;
 }
+
+
 
 .icons a img {
     width: 30px;
@@ -125,6 +127,18 @@ body, p {
 
 @media (max-width: 550px) { 
     .publication {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 550px) { 
+    .about {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 550px) { 
+    .contact {
         width: 90%; 
     }
 }
