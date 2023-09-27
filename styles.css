@@ -216,8 +216,6 @@ h1, label {
 
 @media (max-width: 600px) {
     .profile-pic {
-        display: block;
-        margin: 0 auto;
         width: 80%;
     }
 
@@ -229,6 +227,11 @@ h1, label {
     .container {
         max-width: 100%;
         overflow-x: hidden;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     input, textarea {
