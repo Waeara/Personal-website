@@ -125,21 +125,19 @@ body, p {
     text-align: justify;
 }
 
-@media (max-width: 550px) { 
-    .publication {
-        width: 90%; 
+@media (max-width: 600px) {
+    .profile-pic {
+        display: block;
+        margin: 0 auto; /* This centers the image horizontally */
+        width: 80%; /* Adjust as needed */
     }
-}
-
-@media (max-width: 550px) { 
-    .about {
-        width: 90%; 
+    .text-container {
+        width: 100%;
+        padding: 0 5%; /* Add some padding to ensure text doesn't touch the screen edges */
     }
-}
-
-@media (max-width: 550px) { 
-    .contact {
-        width: 90%; 
+    .container {
+        max-width: 100%;
+        overflow-x: hidden; /* This ensures that no horizontal scroll bar appears */
     }
 }
 
