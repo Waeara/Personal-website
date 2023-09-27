@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <!-- Main Content for Contact Page -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+
+        <p>I am always seeking new collaborations. If you have any ideas, proposals, or questions, feel free to drop me an email by filling out the form below! </p>
+
+        <form action="https://formspree.io/f/mayglwno" method="POST">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Title"  required>
+            </div>
+        
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="8" placeholder="Your Message"  required></textarea>
+            </div>
+        
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+</body>
+
+</html>
