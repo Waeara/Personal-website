@@ -205,7 +205,7 @@ h1, h2, label {
 }
 
 /* Responsive Styles */
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     nav a {
         display: inline-block;
         margin: 5px;
@@ -218,16 +218,12 @@ h1, h2, label {
     h1 {
         font-size: 24px;
     }
-}
-
-@media (max-width: 600px) {
     .profile-pic {
         width: 80%;
     }
 
     .text-container {
-        width: 100%;
-        padding: 0 5%;
+        width: 90%
     }
 
     .container {
@@ -244,10 +240,15 @@ h1, h2, label {
         width: 100%;
         box-sizing: border-box;
     }
-}
 
-@media (max-width: 600px) {
     .publication {
-        width: 90%; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .publication img {
+        margin-top: 20px; 
+        margin-right: 0; 
     }
 }
