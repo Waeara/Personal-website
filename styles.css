@@ -1,11 +1,30 @@
+/* Global Styles */
 body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: justify;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid white;
+    margin: 30px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation Styles */
 nav {
     text-align: center;
     background-color: #333;
@@ -15,11 +34,10 @@ nav {
 
 nav a {
     float: center;
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    display: inline-block;
     text-decoration: none;
 }
 
@@ -28,40 +46,76 @@ a:hover {
     opacity: 0.8;
 }
 
-@media (max-width: 550px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    body {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
+/* Specific Section Styles */
+#about,
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: #333;
+    color: white;
+    display: block;
+    margin-left: auto;  /* Center the element */
+    margin-right: auto; /* Center the element */
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #777;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;  
+    margin-top: 20px;  
+}
+
+#publications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 h1, label {
     text-align: center;
 }
-
-body, p {
-    text-align: justify;
-}
-
-#about {
-    padding: 20px;
-    text-align: center;
-}
-
-
 
 .icons a img {
     width: 30px;
@@ -77,6 +131,11 @@ body, p {
     display: flex;
     align-items: center;
     margin: 20px 0;
+    width: 500px; 
+    color: white; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    text-align: justify;
 }
 
 .publication img {
@@ -84,119 +143,96 @@ body, p {
     margin-right: 20px;
 }
 
-#contact {
-    padding: 20px;
-}
-
-.profile-container {
+.profile-container,
+.publications-container {
     display: flex;
     align-items: center; 
-    gap: 20px; 
-}
-
-.profile-pic {
-    width: 200px; 
-    border-radius: 50%; 
 }
 
 .profile-description {
     max-width: 70%; 
 }
 
-#publications {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.publications-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.publication {
-    width: 500px; 
-    margin: 10px 0; 
-    color: white; 
-    padding: 10px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    text-align: justify;
-}
-
-@media (max-width: 600px) {
-    .profile-pic {
-        display: block;
-        margin: 0 auto; /* This centers the image horizontally */
-        width: 80%; /* Adjust as needed */
-    }
-    .text-container {
-        width: 100%;
-        padding: 0 5%; /* Add some padding to ensure text doesn't touch the screen edges */
-    }
-    .container {
-        max-width: 100%;
-        overflow-x: hidden; /* This ensures that no horizontal scroll bar appears */
-    }
-    input, textarea {
-        width: 100%;
-        box-sizing: border-box; /* This ensures padding doesn't expand the element's total width */
-    }
-}
-
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
 .form-group {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
-
 
 .form-group label {
-    font-size: 18px;   /* Adjust font size as needed for labels */
-    margin-bottom: 8px;  /* Space between label and input field */
+    font-size: 18px;
+    margin-bottom: 8px;
     display: block; 
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-    width: 300px;    /* Adjust the width as desired */
-    padding: 10px;   /* Space inside the input field */
-    font-size: 16px; /* Adjust font size for input fields */
-    border: 2px solid white;  /* Border styling; adjust color as needed */
-    background-color: #333;  /* Lighter than the background for contrast */
-    color: white;    /* Text color in the input field */
-    display: block; 
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: #333;
+    color: white;
+    display: block;
 }
 
 .form-group textarea {
-    height: 100px;   /* Adjust the height for the textarea */
-    display: block; 
+    height: 100px;
 }
 
-/* This styles the submit button */
 .form-group input[type="submit"] {
-    background-color: #555;  /* Adjust button color */
+    background-color: #555;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
 }
 
 .form-group input[type="submit"]:hover {
-    background-color: #777;  /* Color when you hover over the submit button */
+    background-color: #777;
 }
 
-hr {
-    border: none;
-    border-top: 2px solid white; /* Adjust the color to fit your design */
-    margin: 30px 0;
-    width: 80%; /* You can adjust this for a shorter line */
-    margin-left: auto;
-    margin-right: auto;
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;  
+    margin-top: 20px;  
+}
+
+/* Responsive Styles */
+@media (max-width: 550px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-pic {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .text-container {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
