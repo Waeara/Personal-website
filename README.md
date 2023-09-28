@@ -1,10 +1,10 @@
 # Personal-website
-This is a personal website, built as part of a self learning process of HTML and CSS.
+This personal website was built as part of a self-learning process of HTML and CSS.
 
-You can access the website for [here](https://waeara.github.io/Personal-website/).
+You can access the website [here](https://waeara.github.io/Personal-website/).
 
-For the publications page, I wrote 2 web scrappers:
-1) The ORCID one struggled with some SSL error (same happend with Scholar and Scopus APIs), So eventually I inserted the data manually. 
+For the publications page, I wrote two web scrappers:
+1) The ORCID one struggled with some SSL errors (the same happened with Scholar and Scopus APIs), so I inserted the data manually into the HTML script. 
 2) The Medium scraper worked great.
 
-For the Contact Me I used "Formspree" solution. 
+For the Contact Me, I used the "Formspree" solution. 
