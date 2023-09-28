@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-#about, #publications, #contact, .medium-articles {
+#about, #publications, #contact {
     padding-top: 70px;  
 }
 
@@ -221,6 +221,10 @@ h1, h2, label {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
+    #about, #publications, #contact, .medium-articles {
+        padding-top: [desired_value]px;  
+    }
+    
     nav a {
         display: inline-block;
         margin: 5px;
