@@ -147,16 +147,21 @@ h1, h2, label {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 500px; 
+    width: 500px;
+    max-width: 100% 
     color: white; 
     padding: 10px; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    box-sizing: border-box;
     text-align: justify;
+    overflow: hidden;
 }
 
 .publication img {
     width: 150px;
     margin-right: 20px;
+    max-width: 100%; 
+    height: auto; 
 }
 
 .profile-container,
