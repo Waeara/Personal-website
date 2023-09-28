@@ -224,7 +224,7 @@ h1, h2, label {
 /* Responsive Styles */
 @media (max-width: 600px) {
     #about, #publications, #contact {
-        padding-top: 100;  
+        padding-top: 130;  
     }
     
     nav a {
