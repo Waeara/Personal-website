@@ -172,6 +172,8 @@ h1, h2, label {
 
 .profile-description {
     max-width: 70%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
 }
 
 .form-group {
@@ -222,7 +224,7 @@ h1, h2, label {
 /* Responsive Styles */
 @media (max-width: 600px) {
     #about, #publications, #contact, .medium-articles {
-        padding-top: 7%;  
+        padding-top: 12%;  
     }
     
     nav a {
@@ -272,6 +274,12 @@ h1, h2, label {
     .publication-content {
         width: 100%;
         box-sizing: border-box; 
+        text-align: justify;
+    }
+
+    .profile-description {
+        width: 95%; 
+        padding: 0 2.5%; 
     }
 
     .publication img {
