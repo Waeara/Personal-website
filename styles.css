@@ -11,7 +11,7 @@ body {
 }
 
 #about, #publications, #contact, .medium-articles {
-    padding-top: 50px;  
+    padding-top: 70px;  
 }
 
 img {
@@ -259,12 +259,21 @@ h1, h2, label {
     .publication {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: justify;
+        width: 100%;
+        box-sizing: border-box; 
+        padding: 0; 
+    }
+
+    .publication-content {
+        width: 100%;
+        box-sizing: border-box; 
     }
 
     .publication img {
-        margin-top: 20px; 
-        margin-right: 0; 
+        width: 100%; 
+        max-width: 100%; 
+        height: auto; 
     }
 
     .medium-articles,
@@ -282,6 +291,7 @@ h1, h2, label {
     .medium-articles .publication img {
         width: 100%;
         max-width: 300px; 
+        height: auto;
         margin: 10px 0; 
     }
 }
