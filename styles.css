@@ -33,6 +33,12 @@ nav {
     display: flex;           
     justify-content: center; 
     flex-wrap: wrap; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color: rgba(51, 51, 51, 0.95);
 }
 
 nav a {
@@ -250,5 +256,23 @@ h1, h2, label {
     .publication img {
         margin-top: 20px; 
         margin-right: 0; 
+    }
+
+    .medium-articles,
+    .medium-articles .publication-content p,
+    .medium-articles .publication-content a {
+        text-align: justify;
+    }
+
+    .medium-articles .publication {
+        width: 100%;
+        box-sizing: border-box; 
+        padding: 0 5%; 
+    }
+    
+    .medium-articles .publication img {
+        width: 100%;
+        max-width: 300px; 
+        margin: 10px 0; 
     }
 }
