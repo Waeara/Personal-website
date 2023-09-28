@@ -1,82 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Publications</title>
-<link href="styles.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Publications</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
-<!-- Navigation Bar -->
-<nav>
-<a href="index.html">About</a>
-<a href="publications.html">Publications</a>
-<a href="contact.html">Contact Me</a>
-</nav>
-<!-- Main Content for Publications Page -->
-<section id="publications">
-<h1>Publications</h1>
-<h2>Scientific publications</h2>
-<!-- Example Publication 1 -->
-<div class="publication">
-<img alt="Image from Paper 1" src="images/paper-image-1.jpg"/>
-<div class="publication-content">
-<p><strong>Title of Paper 1</strong></p>
-<p>Short description of the paper...</p>
-<p>Citation for Paper 1...</p>
-<a href="LinkToPaper1" target="_blank">Read the paper</a>
-</div>
-</div>
-<!-- Example Publication 2 -->
-<div class="publication">
-<img alt="Image from Paper 2" src="images/paper-image-2.jpg"/>
-<div class="publication-content">
-<p><strong>Title of Paper 2</strong></p>
-<p>Short description of the paper...</p>
-<a href="LinkToPaper2" target="_blank">Read the paper</a>
-</div>
-</div>
-</section>
-<hr/>
-<section class="medium-articles">
-<h2>Medium articles</h2>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
 
-<div class="publication">
-<img alt="Python Automated WhatsApp Message Sender 2.0" src="https://cdn-images-1.medium.com/max/1024/1*qZsXUuivbvvgs5eIVyXeGQ.png"/>
-<div class="publication-content">
-<p><strong>Python Automated WhatsApp Message Sender 2.0</strong></p>
-<p>A week ago, I published a story about how to “build an automated WhatsApp sender that will send randomized messages on your behalf during the day”, and after a few days, it gained more than 20,000 views. Many people on multiple platforms (Medium, LinkedIn, and more) ask me many questions about how we can make it easier to use. So the first step to making it more applicable is to transfer the user interface into a GUI that will be more intuitive.</p>
-<a href="https://levelup.gitconnected.com/python-automated-whatsapp-message-sender-2-0-d146704e7f2f?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
-</div>
-</div>
+    <!-- Main Content for Publications Page -->
+    <section id="publications">
+        <h1>Publications</h1>
+        <h2>Scientific publications</h2>
 
-<div class="publication">
-<img alt="Use Raster’s Data as ML and AI Inputs" src="https://cdn-images-1.medium.com/max/1024/1*9-MOl8zWDWQXs9N_CjTZIA.png"/>
-<div class="publication-content">
-<p><strong>Use Raster’s Data as ML and AI Inputs</strong></p>
-<p>My research focuses on developing machine learning and artificial intelligence algorithms for water quality monitoring. In this field, real-world data is complex and rare to find, and whenever I get data, it doesn’t contain too many features. That’s why I must add many meta-data features that may affect the target I want to predict. A few months ago, I found out that there is a lot of data which is stored in pictures called ‘rasters’. So in this article, I will show how to take this raster and extract its data so it can be used as inputs for ML and AI models.</p>
-<a href="https://levelup.gitconnected.com/use-rasters-data-as-ml-and-ai-inputs-b6cc6ea31f84?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
-</div>
-</div>
+        <!-- Example Publication 1 -->
+        <div class="publication">
+            <img alt="Image from Paper 1" src="Images/Pub1.jpg" />
+            <div class="publication-content">
+                <p><strong>Nowcasting of fecal coliform presence using an artificial neural network | Environmental Pollution</strong></p>
+                <p>At least 2 billion people worldwide use drinking water sources that are contaminated with feces, causing waterborne diseases; poor sanitation, poor hygiene, and unsafe drinking water result in a daily death rate of more than 800 children under 5 years of age from diarrheal diseases. This study shows the feasibility of a novel method to nowcast fecal coliforms' (FC) presence in drinking water sources by applying a multilayer perceptron artificial neuron network (MLP-ANN) model. The model gives a binary answer for FC presence or absence in drinking water sources using a minimum of water quality and geographical parameters, which can be monitored in real-time as predictors with low-cost and in-situ equipment. Using 51,400 samples to train, validate and test the model with temperature, pH, electrical conductivity, turbidity, dissolved oxygen, and total dissolved solids (TDS) as water-quality inputs and the water source type and location (as districts in India) as geographical inputs. The model achieved a total accuracy of 92.8% and a sensitivity of 98.2%, meaning that most FC-contaminated samples were classified correctly. In addition, precision reached 93.1%, meaning that most FC-contamination classifications were actually contaminated. The MLP-ANN performed better than the Linear Regression and K-Nearest Neighbors models, with lower accuracies of 90.2% and 91.0%, respectively. The MLP-ANN model could characterize the water quality geospatially, learn from the parameters whether the water is contaminated by FC, and predict with high accuracy on new testing data. This method can be used as a part of a sensor for FC monitoring and management in water, reducing the time gaps between routine lab testing and thus improving drinking water quality and addressing the SDG 6 targets.</p>
+                <p>Citation for Paper 1...</p>
+                <a href="https://doi.org/10.1016/j.envpol.2023.121484" target="_blank">Read the paper</a>
+            </div>
+        </div>
 
-<div class="publication">
-<img alt="Python Automated WhatsApp Message Sender" src="https://cdn-images-1.medium.com/max/1024/1*DrcouZ3ci76NiVi36hosZw.png"/>
-<div class="publication-content">
-<p><strong>Python Automated WhatsApp Message Sender</strong></p>
-<p>Last week was very busy at work, and I barely managed during the day to arrange a time for lunch and worse than that — to talk to my wife and ask how she is. After a week where in the evenings, I had to explain why I didn't have a few seconds to send a WhatsApp message, I came up with the idea — to build a Python script that would send a daily message on my behalf. So I set out on a mission to create one and try to make it as general, random, and reliable as possible. The last thing I need is for her to find out that I spent time building such a script instead of just sending a message…</p>
-<a href="https://levelup.gitconnected.com/python-automated-whatsapp-message-sender-db488c8c6bc7?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
-</div>
-</div>
+        <!-- Example Publication 2 -->
+        <div class="publication">
+            <img alt="Image from Paper 2" src="Images/Pub2.jpg" />
+            <div class="publication-content">
+                <p><strong>An integrated methodology for assessment of drinking-water quality in low-income settings | Environmental Development</strong></p>
+                <p>A hybrid methodology for assessing water quality, attitudes, and practice in low-income settings, which we call the AmriTau Water Quality Survey (AmriTAU WQS), is presented. An easy-to-use survey, operated through a lightweight smartphone application, is combined with standardized tests for assessing water quality and households’ perceptions and practices, producing a research methodology capable of characterizing the multifaceted nature of drinking-water use and quality in a sample community. This multifaceted approach allows generating meaningful insights, which can inform effective sustainable development projects. To validate the efficacy of this approach, a sample community in Kerala, South India, was assessed, and the results analyzed.</p>
+                <a href="https://doi.org/10.1016/j.envdev.2023.100862" target="_blank">Read the paper</a>
+            </div>
+        </div>
 
-<div class="publication">
-<img alt="Creating interactive maps with Python, Folium, and some HTML" src="https://cdn-images-1.medium.com/max/1024/1*K8J20L7TpliRkD0ZmI_v_w.gif"/>
-<div class="publication-content">
-<p><strong>Creating interactive maps with Python, Folium, and some HTML</strong></p>
-<p>For one of the projects in my research, there was a need to produce an interactive map, and as a Python programmer, I knew several methods to perform the task. To carry out the job, I chose to use the Folium library, but the popup markers that can be designed are fundamental, so to improve the design of the popups, I integrated HTML into the code. In this article, I will present a simple but beautiful example.</p>
-<a href="https://levelup.gitconnected.com/creating-interactive-maps-with-python-folium-and-some-html-f8ac716966f?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
-</div>
-</div>
-</section>
+        <!-- Example Publication 3 -->
+        <div class="publication">
+            <img alt="Image from Paper 3" src="Images/Pub3.jpg" />
+            <div class="publication-content">
+                <p><strong>Decentralized UV Disinfection Systems in Rural Areas or LowResource Contexts: A Case Study Compilation | SSRN</strong></p>
+                <p>Water disinfection using ultraviolet (UV) light, while proven and well established in high income settings, is an emerging tool for improving access to safely managed drinking water in rural areas, humanitarian relief settings and low and middle-income regions. However, there is little information comparing existing UV systems in those contexts, towards improving the effectiveness and reliability of future UV systems. In this work, 19 case studies of small (most ≤ 10 LPM, and all cases < 50 LPM), decentralized UV water disinfection systems being used during the last 30 years to improve water access are presented. The case studies cover a wide range of project types, including schools, hospitals, communities, households and healthcare facilities, spanning across five continents: Asia, Africa, Oceania, Europe and North America. Moreover, the studies demonstrate a variety of UV-based systems, energy sources, water sources and social environments. Each case study describes the background objectives and motivations, water treatment systems, and, most importantly, the outcomes and lessons learned. An interactive web-based map has been created to illustrate the case studies and to catalogue future examples. In general, the use of UV immediately improved the microbiological quality of the water and health outcomes among users; however, long-term (e.g., multiple years) tracking of system performance and sustainability is largely missing. UV system effectiveness was limited by several factors, including the potential for recontamination after UV disinfection, insufficient maintenance, and the absence of regulatory frameworks that allow the more widespread adoption of UV disinfection compared to more conventional disinfectants. This paper and the accompanying map are intended to be supporting evidence for the utility of UV technologies for improving safe water access in low-resource settings, and to support practitioners in improving UV system design.</p>
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4427836" target="_blank">Read the paper</a>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="medium-articles">
+        <h2>Medium articles</h2>
+
+        <div class="publication">
+            <img alt="Python Automated WhatsApp Message Sender 2.0" src="https://cdn-images-1.medium.com/max/1024/1*qZsXUuivbvvgs5eIVyXeGQ.png"/>
+            <div class="publication-content">
+                <p><strong>Python Automated WhatsApp Message Sender 2.0</strong></p>
+                <p>A week ago, I published a story about how to “build an automated WhatsApp sender that will send randomized messages on your behalf during the day”, and after a few days, it gained more than 20,000 views. Many people on multiple platforms (Medium, LinkedIn, and more) ask me many questions about how we can make it easier to use. So the first step to making it more applicable is to transfer the user interface into a GUI that will be more intuitive.</p>
+                <a href="https://levelup.gitconnected.com/python-automated-whatsapp-message-sender-2-0-d146704e7f2f?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <img alt="Use Raster’s Data as ML and AI Inputs" src="https://cdn-images-1.medium.com/max/1024/1*9-MOl8zWDWQXs9N_CjTZIA.png"/>
+            <div class="publication-content">
+            <p><strong>Use Raster’s Data as ML and AI Inputs</strong></p>
+            <p>My research focuses on developing machine learning and artificial intelligence algorithms for water quality monitoring. In this field, real-world data is complex and rare to find, and whenever I get data, it doesn’t contain too many features. That’s why I must add many meta-data features that may affect the target I want to predict. A few months ago, I found out that there is a lot of data which is stored in pictures called ‘rasters’. So in this article, I will show how to take this raster and extract its data so it can be used as inputs for ML and AI models.</p>
+            <a href="https://levelup.gitconnected.com/use-rasters-data-as-ml-and-ai-inputs-b6cc6ea31f84?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
+        </div>
+    </div>
+
+    <div class="publication">
+        <img alt="Python Automated WhatsApp Message Sender" src="https://cdn-images-1.medium.com/max/1024/1*DrcouZ3ci76NiVi36hosZw.png"/>
+        <div class="publication-content">
+            <p><strong>Python Automated WhatsApp Message Sender</strong></p>
+            <p>Last week was very busy at work, and I barely managed during the day to arrange a time for lunch and worse than that — to talk to my wife and ask how she is. After a week where in the evenings, I had to explain why I didn't have a few seconds to send a WhatsApp message, I came up with the idea — to build a Python script that would send a daily message on my behalf. So I set out on a mission to create one and try to make it as general, random, and reliable as possible. The last thing I need is for her to find out that I spent time building such a script instead of just sending a message…</p>
+            <a href="https://levelup.gitconnected.com/python-automated-whatsapp-message-sender-db488c8c6bc7?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
+        </div>
+    </div>
+
+    <div class="publication">
+        <img alt="Creating interactive maps with Python, Folium, and some HTML" src="https://cdn-images-1.medium.com/max/1024/1*K8J20L7TpliRkD0ZmI_v_w.gif"/>
+        <div class="publication-content">
+            <p><strong>Creating interactive maps with Python, Folium, and some HTML</strong></p>
+            <p>For one of the projects in my research, there was a need to produce an interactive map, and as a Python programmer, I knew several methods to perform the task. To carry out the job, I chose to use the Folium library, but the popup markers that can be designed are fundamental, so to improve the design of the popups, I integrated HTML into the code. In this article, I will present a simple but beautiful example.</p>
+            <a href="https://levelup.gitconnected.com/creating-interactive-maps-with-python-folium-and-some-html-f8ac716966f?source=rss-76ab98636d00------2" target="_blank">Read the article</a>
+        </div>
+    </div>
+    </section>
 </body>
 </html>
