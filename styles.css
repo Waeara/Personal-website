@@ -263,18 +263,20 @@ h1, h2, label {
     }
 
     .publication {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: justify;
         width: 100%;
         box-sizing: border-box; 
-        padding: 0; 
+        padding: 0 5%; 
     }
 
     .publication-content {
         width: 100%;
         box-sizing: border-box; 
         text-align: justify;
+        padding: 0 5%;
     }
 
     .profile-description {
